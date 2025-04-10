@@ -30,18 +30,17 @@ models.py
 
 from django.db import models
 from django.contrib import admin
-class Employee (models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee ID")
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
+class Employee(models.Model):
+    User_name=models.CharField(max_length=100)
     email=models.EmailField()
+    Phone_Number=models.IntegerField()
+    MovieName=models.CharField(max_length=100)
+    seats=models.IntegerField()
 class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+    list_display=('User_name','email','Phone_Number','MovieName','seats')
 
 ```
 ## OUTPUT
-![alt text](<Screenshot 2025-04-10 083453.png>)
-
+![alt text](<Screenshot 2025-04-10 215033.png>)
 ## RESULT
 Thus the program for creating movies database using ORM hass been executed successfully
