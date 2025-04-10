@@ -39,9 +39,9 @@ class Employee (models.Model):
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=('eid','name','salary','age','email')
 
+```
 ## OUTPUT
-
-ORM/Screenshot 2025-04-10 083453.png
+![alt text](<Screenshot 2025-04-10 083453.png>)
 
 ## RESULT
 Thus the program for creating movies database using ORM hass been executed successfully
